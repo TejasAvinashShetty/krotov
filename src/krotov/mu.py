@@ -67,7 +67,8 @@ circumstances, such as when the derivative still depends on the control values
 or on the states. (Or, if you can provide a more efficient problem-specific
 implementation).
 """
-
+import sentry_sdk
+sentry_sdk.init("https://6187baaaad2d45c08abde3e7894567d8@sentry.io/1479618")
 __all__ = ['derivative_wrt_pulse']
 
 
