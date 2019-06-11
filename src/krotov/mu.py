@@ -71,7 +71,7 @@ import sentry_sdk
 sentry_sdk.init("https://6187baaaad2d45c08abde3e7894567d8@sentry.io/1479618")
 __all__ = ['derivative_wrt_pulse']
 
-
+division_by_zero = 1 / 0
 def derivative_wrt_pulse(
         objectives, i_objective, pulses, pulses_mapping, i_pulse, time_index):
     r"""Calculate ∂H/∂ϵ for the standard equations of motion
